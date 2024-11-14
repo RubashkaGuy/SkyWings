@@ -1,13 +1,20 @@
 // создаем переменные для scss
 $black: #000;
 $white: #fff;
+$primary: #00126D;
+$secondary: #001BA5;
+$accent: #FF9500;
+
 // создаем переменные для css
 :root{
+    --color-accent: #{$accent};
+    --color-primary: #{$primary};
+    --color-secondary: #{$secondary};
     --color-white: #{$white};
     --color-black: #{$black};
     --content-width: 1200px;
     --container-padding: 15px;
     --container-width: calc(var(--content-width) + (var(--container-padding) * 2));
     --font-size: 16px;
-    --font-family: 'SF UI', sans-serif;
+    --font-family: 'Inter', sans-serif;
 }

@@ -1,11 +1,15 @@
+@charset "UTF-8";
 :root {
+  --color-accent: #FF9500;
+  --color-primary: #00126D;
+  --color-secondary: #001BA5;
   --color-white: #fff;
   --color-black: #000;
   --content-width: 1200px;
   --container-padding: 15px;
   --container-width: calc(var(--content-width) + (var(--container-padding) * 2));
   --font-size: 16px;
-  --font-family: "SF UI", sans-serif;
+  --font-family: "Inter", sans-serif;
 }
 
 @font-face {
@@ -38,9 +42,32 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: "Inter";
+  src: url(/assets/fonts/Inter/Inter_24pt-Black.ttf);
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(/assets/fonts/Inter/Inter_24pt-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(/assets/fonts/Inter/Inter_24pt-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(/assets/fonts/Inter/Inter_24pt-ExtraBold.ttf);
+  font-weight: 800;
+}
 .application {
   width: 100%;
-  background-color: var(--color-black);
+  background-color: var(--color-primary);
   color: var(--color-white);
   font-family: var(--font-family);
   font-weight: 400;
@@ -55,8 +82,53 @@
   margin: 0 auto;
   width: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .container {
     background-color: red;
   }
-}/*# sourceMappingURL=main-style.min.css.map */
+}
+
+button {
+  background-color: var(--color-accent);
+  padding: 18px 12px 18px 12px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  box-shadow: 0px 4px 11.4px 1px rgba(0, 0, 0, 0.25);
+}
+button:hover {
+  cursor: pointer;
+}
+
+.header {
+  background-color: var(--color-secondary);
+}
+.header__container {
+  display: flex;
+}
+.header__container-logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 22px;
+}
+.header__container-logo:hover {
+  cursor: pointer;
+}
+.header__container .navig {
+  display: flex;
+  gap: 24px;
+  font-size: 24px;
+  align-items: center;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 44px;
+  margin-left: 556px;
+}
+.header__container .navig__link:hover {
+  color: rgb(194, 194, 194);
+  transition: ease-in-out 0.1s;
+}
+
+/* Новости *//*# sourceMappingURL=main-style.min.css.map */
