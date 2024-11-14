@@ -1,0 +1,30 @@
+.general {
+    background-image: url(/assets/img/bg/image.svg);
+    height: 1080px;
+    &__wrapper {
+
+        
+        margin-left: 92px;
+        &-title {
+            padding-top: 235px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 64px;
+            line-height: 77px;
+            width: 1199px;
+            margin: 0;
+        }
+        &-button {
+            width: 511px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 32px;
+            line-height: 39px;
+            color: white;
+            margin-top: 162px;
+
+        }
+    }
+}
