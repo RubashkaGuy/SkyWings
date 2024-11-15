@@ -1,0 +1,49 @@
+.feedback {
+    height: 1080px;
+    &__wrapper {
+        &-text {
+            text-align: center;
+            font-weight: 800;
+            font-size: 96px;
+            line-height: 116px;
+            margin: 0;
+
+        }
+        
+        .fcards {
+            padding-top: 70px;
+            display: flex;
+            gap: 106px;
+            justify-content: center;
+            &__fcard {
+                text-align: center;
+                &-name {
+                    font-weight: 800;
+                    font-size: 36px;
+                    line-height: 44px;
+                    text-align: center;
+                    margin: 0;
+                }
+                &-comment{
+                    margin: 0;
+                    background-color: #000C47;
+                    border-radius: 66px;
+                    height: 459px;
+                    width: 397px;
+                    padding: 43px;
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 36px;
+                    
+                }
+
+
+            }
+
+
+        }
+
+    }
+
+
+}

@@ -1,0 +1,49 @@
+.blog {
+    height: 1080px;
+
+    &__wrapper  {
+        &-title {
+            font-weight: 800;
+            font-size: 96px;
+            line-height: 116px;
+            text-align: center;
+            margin: 0;
+        }
+        .bcont {
+            padding-top: 100px;
+            display: flex;
+            &__arrow {
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(0.8);
+                    transition: ease-in-out 0.1s;
+                }
+            }
+            &__info {
+                display: flex;
+                gap: 45px;
+                .btext {
+                    &__title {
+                        font-weight: 700;
+                        font-size: 64px;
+                        line-height: 77px;
+                    }
+                    &__subtitle {
+                        font-weight: 400;
+                        font-size: 40px;
+                        line-height: 48px;
+                        width: 826px;
+                    }
+                }
+                
+            }
+        }
+    }
+
+
+
+}
+
+
+/* Блог */
+

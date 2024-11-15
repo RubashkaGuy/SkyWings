@@ -355,4 +355,79 @@ button:hover {
   justify-content: center;
   gap: 100px;
   padding-top: 40px;
-}/*# sourceMappingURL=main-style.min.css.map */
+}
+
+.feedback {
+  height: 1080px;
+}
+.feedback__wrapper-text {
+  text-align: center;
+  font-weight: 800;
+  font-size: 96px;
+  line-height: 116px;
+  margin: 0;
+}
+.feedback__wrapper .fcards {
+  padding-top: 70px;
+  display: flex;
+  gap: 106px;
+  justify-content: center;
+}
+.feedback__wrapper .fcards__fcard {
+  text-align: center;
+}
+.feedback__wrapper .fcards__fcard-name {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  margin: 0;
+}
+.feedback__wrapper .fcards__fcard-comment {
+  margin: 0;
+  background-color: #000C47;
+  border-radius: 66px;
+  height: 459px;
+  width: 397px;
+  padding: 43px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.blog {
+  height: 1080px;
+}
+.blog__wrapper-title {
+  font-weight: 800;
+  font-size: 96px;
+  line-height: 116px;
+  text-align: center;
+  margin: 0;
+}
+.blog__wrapper .bcont {
+  padding-top: 100px;
+  display: flex;
+}
+.blog__wrapper .bcont__arrow:hover {
+  cursor: pointer;
+  transform: scale(0.8);
+  transition: ease-in-out 0.1s;
+}
+.blog__wrapper .bcont__info {
+  display: flex;
+  gap: 45px;
+}
+.blog__wrapper .bcont__info .btext__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+}
+.blog__wrapper .bcont__info .btext__subtitle {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  width: 826px;
+}
+
+/* Блог *//*# sourceMappingURL=main-style.min.css.map */
