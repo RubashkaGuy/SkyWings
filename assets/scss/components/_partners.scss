@@ -1,0 +1,28 @@
+.partners {
+    &__wrapper {
+        padding-top: 100px;
+        padding-bottom: 150px;
+        &-title {
+            margin: 0;
+            text-align: center;
+            font-weight: 800;
+            font-size: 96px;
+            line-height: 116px;
+        }
+        .icn {
+
+            .picons {
+                padding-top: 240px;
+                display: flex;
+                justify-content: center;
+                gap: 100px;
+                padding-top: 40px;
+            }
+
+        }
+
+    }
+
+}
+
+
