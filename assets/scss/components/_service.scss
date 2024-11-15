@@ -1,5 +1,10 @@
 .service {
     height: 1080px;
+    @include krpc {
+        height: auto;
+        padding-bottom: 40px;
+        background-image:none;
+    }
     &__wrapper {
         &-title {
             padding-top: 62px;
@@ -8,12 +13,23 @@
             font-size: 64px;
             line-height: 77px;
             text-align: center;
+            @include krpc {
+                padding-top: 34px;
+            }
         }
         .scards{
             display: flex;
             justify-content: center;
             gap: 120px;
+            @include krpc {
+                display: grid;
+                gap: 5px;
+            }
             &__card {
+                @include krpc {
+                    display: grid;
+                    
+                }
                 padding-top: 75px;
                 &-title {
                     text-align: center;
@@ -27,6 +43,10 @@
                     border-radius: 86px;
                 }
                 &-subtitle {
+                    @include krpc {
+                        margin: 0;
+                        padding: 0;
+                    }
                     font-weight: 400;
                     font-size: 28px;
                     line-height: 34px;

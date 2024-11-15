@@ -2,7 +2,15 @@
     height: 1080px;
     display: flex;
     justify-content: center; 
+    @include krpc {
+        height: 768px;
+        transform: scale(0.55);
+    }
     &__wrapper  {
+        @include krpc {
+            position: relative;
+            top: -200px;
+        }
         &-title {
             font-weight: 800;
             font-size: 96px;
@@ -12,6 +20,9 @@
         }
         .bcont {
             padding-top: 100px;
+            @include krpc {
+                padding-bottom: 10px;
+            }
             display: flex;
             &__arrow {
                 &:hover {
@@ -34,6 +45,11 @@
                         font-size: 40px;
                         line-height: 48px;
                         width: 826px;
+                        @include krpc {
+                            font-size: 32px;
+                            line-height: 40px;
+                        }
+
                     }
                 }
                 

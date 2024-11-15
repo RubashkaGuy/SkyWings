@@ -1,8 +1,11 @@
+$kr: 300px;
+$kr2: 350px;
 $sm: 390px;
 $md: 576px;
 $lg: 768px;
 $xl: 820px;
 $xxl: 990px;
+$krpc: 1024px;
 @mixin sm {
     @media (max-width: #{$sm}) {
         @content;
@@ -26,6 +29,21 @@ $xxl: 990px;
  }
  @mixin xxl {
     @media (max-width: #{$xxl}) {
+        @content;
+    }
+ }
+ @mixin kr {
+    @media (max-width: #{$kr}) {
+        @content;
+    }
+ }
+ @mixin kr2 {
+    @media (max-width: #{$kr2}) {
+        @content;
+    }
+ }
+ @mixin krpc {
+    @media (max-width: #{$krpc}) {
         @content;
     }
  }

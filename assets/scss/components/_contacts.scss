@@ -1,23 +1,40 @@
 .contacts {
     height: 1080px;
-    
+    @include krpc {
+        height: auto;
+    }
     &__wrapper {
         padding-top: 88px;
         padding-bottom: 88px;
         display: flex;
         justify-content: center;
+        @include krpc {
+            gap: 0;
+            padding: 0;
+        }
         .info {
+            @include krpc {
+                transform: scale(0.8);
+                padding-left: 70px;
+            }
             &__title {
                 font-weight: 800;
                 font-size: 96px;
                 line-height: 116px;
                 margin: 0;
+                @include krpc {
+                    font-size: 48px;
+                }
             }
             &__subtitle {
                 font-weight: 400;
                 font-size: 40px;
                 line-height: 73px;
                 width: 783px;
+                @include krpc {
+                    font-size: 24px;
+                    line-height: 26px;
+                }
             }
             &__request {
                 padding-top: 180px;
@@ -28,6 +45,9 @@
                     line-height: 99%;
                     margin: 0;
                     padding-bottom: 25px;
+                    @include krpc {
+                        font-size: 18px;
+                    }
                 }
                 &-button {
                     width: 511px;
@@ -48,6 +68,12 @@
         
         .cmaps {
             border-radius: 62px;
+            @include krpc {
+                width: 400px;
+                height: 400px;
+                position: relative;
+                transform: translate(-70px, 50px);
+            }
         }
     }
 }

@@ -17,12 +17,17 @@
             &__first {
                 display: flex;
                 gap: 190px;
+                @include krpc {
+                    gap: 100px;
+                }
             }
 
             &__second {
                 display: flex;
                 gap: 170px;
-
+                @include krpc {
+                    gap: 80px;
+                }
                 &-button {
                     font-weight: 800;
                     font-size: 12px;

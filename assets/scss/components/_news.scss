@@ -11,13 +11,22 @@
         display: flex;
         justify-content: center;
         gap: 91px;
+        @include krpc {
+            gap: 15px;
+        }
         .ncard {
             &__date {
+                @include krpc {
+                    
+                }
                 font-weight: 500;
                 font-size: 13px;
                 line-height: 16px;
             }
             &__text {
+                @include krpc {
+                    width: 220px;
+                }
                 font-weight: 500;
                 font-size: 20px;
                 line-height: 24px;

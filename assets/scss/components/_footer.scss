@@ -1,14 +1,22 @@
 .footer {
     background-color: var(--color-secondary);
+
     .fcont {
         display: flex;
         justify-content: center;
         gap: 400px;
-        
+        @include krpc {
+            gap: 100px;
+        }
         &__copyright {
             &-logo {
                 width: 100px;
                 height: 30px;
+                @include krpc {
+                    width: 80%;
+                    height: 80%;
+                    padding-left: 20px;
+                }
             }
             &-text {
                 margin: 0;
@@ -27,6 +35,9 @@
 
         }
         &__partners {
+            @include krpc {
+                padding-right: 20px;
+            }
             justify-content: right;
             display: flex;
             gap: 16px;

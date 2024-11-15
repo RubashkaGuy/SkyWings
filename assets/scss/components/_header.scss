@@ -20,6 +20,10 @@
             font-size: 36px;
             line-height: 44px;
             margin-left: 556px;
+            @include krpc {
+                margin-left: 150px;
+                font-size: 20px;
+            }
             &__link {
                 &:hover {
                     color: rgb(194, 194, 194);

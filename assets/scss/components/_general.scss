@@ -1,6 +1,10 @@
 .general {
     background-image: url(/assets/img/bg/image.svg);
     height: 1080px;
+    @include krpc {
+        height: 600px;
+        background-position: -380px;
+    }
     &__wrapper {
         width: 1080px;
         
@@ -14,6 +18,12 @@
             line-height: 77px;
             width: 1199px;
             margin: 0;
+            @include krpc {
+                font-size: 38px;
+                line-height: 45px;
+                width: 680px;
+                padding-top: 120px;
+            }
         }
         &-button {
             width: 511px;
@@ -24,9 +34,12 @@
             line-height: 39px;
             color: white;
             margin-top: 162px;
+            @include krpc {
+                margin-top: 100px;
+            }
             &:hover {
                 transition: ease-in-out 0.1s;
-                background-color: #bc6e00;
+                background-color: #8C5200;
             }
 
         }
