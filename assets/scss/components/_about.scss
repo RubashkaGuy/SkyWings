@@ -1,17 +1,21 @@
 .about {
     background-image: url(/assets/img/bg/image\ 1.svg);
     height: 1080px;
+    display: flex;
+    justify-content: center;
     &__wrapper {
         padding-left: 96px;
         padding-right: 96px;
         padding-top: 109px;
         padding-bottom: 109px;
         display: flex;
+
         gap: 106px;
         &-image {
                 
         }
         .atext {
+
 
 
 
@@ -25,7 +29,7 @@
                 font-weight: 400;
                 font-size: 33px;
                 line-height: 40px;
-
+                width: 758px;
                 &-selection {
                     font-weight: 400;
                     font-size: 40px;

@@ -1,0 +1,49 @@
+.footer {
+    background-color: var(--color-secondary);
+    .fcont {
+        display: flex;
+        justify-content: center;
+        gap: 400px;
+        
+        &__copyright {
+            &-logo {
+                width: 100px;
+                height: 30px;
+            }
+            &-text {
+                margin: 0;
+                font-weight: 500;
+                font-size: 8px;
+                line-height: 6px;
+            }
+
+        }
+        &__link {
+            text-align: center;
+            font-weight: 800;
+            font-size: 32px;
+            line-height: 39px;
+            margin: 0;
+
+        }
+        &__partners {
+            justify-content: right;
+            display: flex;
+            gap: 16px;
+            &-logo {
+
+                width: 45px;
+            }
+
+        }
+    }
+}
+
+.fcont__link {
+    text-align: center;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+    margin: 0;
+    justify-content: c;
+}

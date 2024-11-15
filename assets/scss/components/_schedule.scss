@@ -1,0 +1,52 @@
+.schedule {
+    padding-bottom: 150px;
+    &__wrapper {
+        &-title {
+            font-weight: 800;
+            font-size: 64px;
+            line-height: 77px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .table {
+            display: grid;
+            justify-content: center;
+            gap: 20px;
+
+            &__first {
+                display: flex;
+                gap: 190px;
+            }
+
+            &__second {
+                display: flex;
+                gap: 170px;
+
+                &-button {
+                    font-weight: 800;
+                    font-size: 12px;
+                    line-height: 15px;
+                    width: 175px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    color: white;
+                    font-size: 12px;
+
+                    &:hover {
+                        transition: ease-in-out 0.1s;
+                        background-color: #bc6e00;
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+
+
+/* Расписание Рейсов */
+
+/* Забронировать билет */
+

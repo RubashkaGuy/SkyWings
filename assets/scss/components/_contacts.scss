@@ -1,6 +1,6 @@
 .contacts {
     height: 1080px;
-
+    
     &__wrapper {
         padding-top: 88px;
         padding-bottom: 88px;
@@ -37,6 +37,10 @@
                     font-size: 40px;
                     line-height: 39px;
                     color: white;
+                    &:hover {
+                        transition: ease-in-out 0.1s;
+                        background-color: #bc6e00;
+                    }
                 }
     
             }

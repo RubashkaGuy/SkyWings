@@ -2,7 +2,7 @@
     background-image: url(/assets/img/bg/image.svg);
     height: 1080px;
     &__wrapper {
-
+        width: 1080px;
         
         margin-left: 92px;
         &-title {
@@ -24,6 +24,10 @@
             line-height: 39px;
             color: white;
             margin-top: 162px;
+            &:hover {
+                transition: ease-in-out 0.1s;
+                background-color: #bc6e00;
+            }
 
         }
     }
