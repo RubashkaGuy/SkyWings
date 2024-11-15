@@ -1,4 +1,6 @@
 // подключает компоненты отдельных блоков сайта
 // в качестве тестового подключения, подключается блок - header
 @import "./components/header";
-@import "./components/general"
+@import "./components/general";
+@import "./components/news";
+@import "./components/about";

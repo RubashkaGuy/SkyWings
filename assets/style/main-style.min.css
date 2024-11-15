@@ -158,4 +158,64 @@ button:hover {
   line-height: 39px;
   color: white;
   margin-top: 162px;
-}/*# sourceMappingURL=main-style.min.css.map */
+}
+
+.news {
+  height: 289px;
+}
+.news__title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  margin: 0;
+}
+.news__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 91px;
+}
+.news__wrapper .ncard__date {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+}
+.news__wrapper .ncard__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  width: 331px;
+}
+
+.about {
+  background-image: url(/assets/img/bg/image\ 1.svg);
+  height: 1080px;
+}
+.about__wrapper {
+  padding-left: 96px;
+  padding-right: 96px;
+  padding-top: 109px;
+  padding-bottom: 109px;
+  display: flex;
+  gap: 106px;
+}
+.about__wrapper .atext-title {
+  font-weight: 800;
+  font-size: 96px;
+  line-height: 116px;
+  margin: 0;
+}
+.about__wrapper .atext-subtitle {
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 40px;
+}
+.about__wrapper .atext-subtitle-selection {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+/* SkyWings — международная авиакомпания, основанная в 2008 году с целью сделать путешествия доступными и комфортными. Начиная с нескольких маршрутов, мы быстро выросли в крупного перевозчика, предлагая рейсы по всему миру. Наш флот соответствует последним стандартам безопасности и экологии, а команда профессионалов обеспечивает высокий уровень сервиса, чтобы каждый полет приносил удовольствие. Мы гордимся тем, что стали выбором миллионов путешественников, ценящих комфорт и надежность. SkyWings — ваш надежный партнер в мире авиации, готовый подарить крылья для новых открытий! */
+/* SkyWings — международная авиакомпания, основанная в 2008 году с целью сделать путешествия доступными и комфортными. Начиная с нескольких маршрутов, мы быстро выросли в крупного перевозчика, предлагая рейсы по всему миру. Наш флот соответствует последним стандартам безопасности и экологии, а команда профессионалов обеспечивает высокий уровень сервиса, чтобы каждый полет приносил удовольствие. Мы гордимся тем, что стали выбором миллионов путешественников, ценящих комфорт и надежность. SkyWings — ваш надежный партнер в мире авиации, готовый подарить крылья для новых открытий! */
+/* О нас *//*# sourceMappingURL=main-style.min.css.map */

@@ -1,0 +1,33 @@
+.news {
+    height:289px;
+    &__title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    margin: 0;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 91px;
+        .ncard {
+            &__date {
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 16px;
+            }
+            &__text {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                width: 331px;
+            }
+        }
+
+    }
+}
+
+
+
+
