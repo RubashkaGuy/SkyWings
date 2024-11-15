@@ -1,0 +1,52 @@
+.contacts {
+    height: 1080px;
+
+    &__wrapper {
+        padding-top: 88px;
+        padding-bottom: 88px;
+        display: flex;
+        justify-content: center;
+        .info {
+            &__title {
+                font-weight: 800;
+                font-size: 96px;
+                line-height: 116px;
+                margin: 0;
+            }
+            &__subtitle {
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 73px;
+                width: 783px;
+            }
+            &__request {
+                padding-top: 180px;
+                &-text {
+                    width: 511px;
+                    font-weight: 500;
+                    font-size: 32px;
+                    line-height: 99%;
+                    margin: 0;
+                    padding-bottom: 25px;
+                }
+                &-button {
+                    width: 511px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 40px;
+                    line-height: 39px;
+                    color: white;
+                }
+    
+            }
+        }
+        
+        .cmaps {
+            border-radius: 62px;
+        }
+    }
+}
+
+
+

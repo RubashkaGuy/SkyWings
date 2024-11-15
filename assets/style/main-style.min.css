@@ -216,6 +216,124 @@ button:hover {
   line-height: 48px;
 }
 
-/* SkyWings — международная авиакомпания, основанная в 2008 году с целью сделать путешествия доступными и комфортными. Начиная с нескольких маршрутов, мы быстро выросли в крупного перевозчика, предлагая рейсы по всему миру. Наш флот соответствует последним стандартам безопасности и экологии, а команда профессионалов обеспечивает высокий уровень сервиса, чтобы каждый полет приносил удовольствие. Мы гордимся тем, что стали выбором миллионов путешественников, ценящих комфорт и надежность. SkyWings — ваш надежный партнер в мире авиации, готовый подарить крылья для новых открытий! */
-/* SkyWings — международная авиакомпания, основанная в 2008 году с целью сделать путешествия доступными и комфортными. Начиная с нескольких маршрутов, мы быстро выросли в крупного перевозчика, предлагая рейсы по всему миру. Наш флот соответствует последним стандартам безопасности и экологии, а команда профессионалов обеспечивает высокий уровень сервиса, чтобы каждый полет приносил удовольствие. Мы гордимся тем, что стали выбором миллионов путешественников, ценящих комфорт и надежность. SkyWings — ваш надежный партнер в мире авиации, готовый подарить крылья для новых открытий! */
-/* О нас *//*# sourceMappingURL=main-style.min.css.map */
+.additional {
+  background-image: url(/assets/img/bg/image\ 3.svg);
+  height: 1080px;
+}
+.additional__wrapper-title {
+  padding-top: 62px;
+  margin: 0;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+}
+.additional__wrapper .acards {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+.additional__wrapper .acards__card {
+  padding-top: 75px;
+}
+.additional__wrapper .acards__card-title {
+  text-align: center;
+  margin: 0;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  padding-bottom: 4px;
+}
+.additional__wrapper .acards__card-image {
+  border-radius: 86px;
+}
+.additional__wrapper .acards__card-subtitle {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  width: 460px;
+}
+
+.service {
+  height: 1080px;
+}
+.service__wrapper-title {
+  padding-top: 62px;
+  margin: 0;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+}
+.service__wrapper .scards {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+.service__wrapper .scards__card {
+  padding-top: 75px;
+}
+.service__wrapper .scards__card-title {
+  text-align: center;
+  margin: 0;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  padding-bottom: 4px;
+}
+.service__wrapper .scards__card-image {
+  border-radius: 86px;
+}
+.service__wrapper .scards__card-subtitle {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  width: 460px;
+}
+
+.contacts {
+  height: 1080px;
+}
+.contacts__wrapper {
+  padding-top: 88px;
+  padding-bottom: 88px;
+  display: flex;
+  justify-content: center;
+}
+.contacts__wrapper .info__title {
+  font-weight: 800;
+  font-size: 96px;
+  line-height: 116px;
+  margin: 0;
+}
+.contacts__wrapper .info__subtitle {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 73px;
+  width: 783px;
+}
+.contacts__wrapper .info__request {
+  padding-top: 180px;
+}
+.contacts__wrapper .info__request-text {
+  width: 511px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 99%;
+  margin: 0;
+  padding-bottom: 25px;
+}
+.contacts__wrapper .info__request-button {
+  width: 511px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 39px;
+  color: white;
+}
+.contacts__wrapper .cmaps {
+  border-radius: 62px;
+}/*# sourceMappingURL=main-style.min.css.map */
