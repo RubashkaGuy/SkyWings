@@ -1,11 +1,18 @@
 .news {
     height:289px;
+    @include sm {
+        height: auto;
+        
+    }
     &__title {
     font-weight: 800;
     font-size: 48px;
     line-height: 58px;
     text-align: center;
     margin: 0;
+    @include sm {
+        padding-top: 20px;
+    }
     }
     &__wrapper {
         display: flex;
@@ -14,7 +21,17 @@
         @include krpc {
             gap: 15px;
         }
+        @include lg {
+            transform: scale(0.8);
+        }
+        @include sm {
+            transform: none;
+            display: grid;
+            padding-top: 50px;
+            
+        }
         .ncard {
+
             &__date {
                 @include krpc {
                     

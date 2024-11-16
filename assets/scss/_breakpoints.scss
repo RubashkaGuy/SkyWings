@@ -6,6 +6,8 @@ $lg: 768px;
 $xl: 820px;
 $xxl: 990px;
 $krpc: 1024px;
+$mdpc: 1640px;
+
 @mixin sm {
     @media (max-width: #{$sm}) {
         @content;
@@ -44,6 +46,11 @@ $krpc: 1024px;
  }
  @mixin krpc {
     @media (max-width: #{$krpc}) {
+        @content;
+    }
+ }
+ @mixin mdpc {
+    @media (max-width: #{$mdpc}) {
         @content;
     }
  }

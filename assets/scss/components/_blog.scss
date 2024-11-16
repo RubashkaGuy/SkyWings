@@ -11,6 +11,9 @@
             position: relative;
             top: -200px;
         }
+        @include mdpc {
+            transform: scale(0.8);
+        }
         &-title {
             font-weight: 800;
             font-size: 96px;
@@ -46,6 +49,10 @@
                         line-height: 48px;
                         width: 826px;
                         @include krpc {
+                            font-size: 32px;
+                            line-height: 40px;
+                        }
+                        @include mdpc {
                             font-size: 32px;
                             line-height: 40px;
                         }

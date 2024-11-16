@@ -21,11 +21,23 @@
                 position: relative;
                 top: -50px;
             }
+            @include lg {
+                transform: scale(0.5);
+            }
+            @include sm {
+                display: grid;
+                transform: none;
+                top: 0;
+                
+            }
             padding-top: 70px;
             display: flex;
             gap: 106px;
             justify-content: center;
             &__fcard {
+                @include sm {
+                    padding-top: 50px;
+                }
                 text-align: center;
                 &-name {
                     font-weight: 800;
@@ -44,7 +56,12 @@
                     font-weight: 400;
                     font-size: 30px;
                     line-height: 36px;
-                    
+                    @include sm {
+                        font-size: 20px;
+                        line-height: 22px;
+                        height: auto;
+                        width: 300px;
+                    }
                 }
 
 

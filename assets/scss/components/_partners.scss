@@ -11,10 +11,24 @@
             font-weight: 800;
             font-size: 96px;
             line-height: 116px;
+            @include lg {
+                font-size: 70px;
+            }
+            @include sm {
+                font-size: 50px;
+                line-height: 55px;
+                padding-bottom: 40px;
+            }
         }
         .icn {
             @include krpc {
                 transform:scale(0.5);
+            }
+            @include sm {
+                transform: none;
+                height: auto;
+                width: 100px;
+
             }
             .picons {
                 padding-top: 240px;
@@ -22,6 +36,32 @@
                 justify-content: center;
                 gap: 100px;
                 padding-top: 40px;
+                @include sm {
+                    display: grid;
+                    align-items: center;
+                    padding-left: 220px;
+                    gap: 20px;
+                    padding-top: 0;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    
+                }
+                .two__icon {
+                    @include sm {
+                        width: 300px;
+                        padding-right: 40px;
+                    }
+                    
+                }
+                .three__icon {
+                    @include sm {
+                        width: 300px;
+                        display: block;
+                        padding-right: 40px;
+                    }
+
+                }
                 
             }
 

@@ -6,6 +6,9 @@
         background-image:none;
     }
     &__wrapper {
+        @include mdpc {
+            transform: scale(0.8);
+        }
         &-title {
             padding-top: 62px;
             margin: 0;

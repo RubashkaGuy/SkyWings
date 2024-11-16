@@ -23,6 +23,9 @@
                 font-weight: 500;
                 font-size: 8px;
                 line-height: 6px;
+                @include lg {
+                    font-size: 5px;
+                }
             }
 
         }
@@ -32,6 +35,10 @@
             font-size: 32px;
             line-height: 39px;
             margin: 0;
+            @include lg {
+                font-size: 12px;
+                line-height: 13px;
+            }
 
         }
         &__partners {

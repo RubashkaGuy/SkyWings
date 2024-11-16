@@ -24,6 +24,14 @@
                 margin-left: 150px;
                 font-size: 20px;
             }
+            @include mdpc {
+                margin-left: 720px;
+                font-size: 20px;
+            }
+            @include lg {
+                margin-left: 60px;
+                font-size: 13px;
+            }
             &__link {
                 &:hover {
                     color: rgb(194, 194, 194);

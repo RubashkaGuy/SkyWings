@@ -132,6 +132,18 @@ button:hover {
     font-size: 20px;
   }
 }
+@media (max-width: 1640px) {
+  .header__container .navig {
+    margin-left: 720px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .header__container .navig {
+    margin-left: 60px;
+    font-size: 13px;
+  }
+}
 .header__container .navig__link:hover {
   color: rgb(194, 194, 194);
   transition: ease-in-out 0.1s;
@@ -146,6 +158,19 @@ button:hover {
   .general {
     height: 600px;
     background-position: -380px;
+  }
+}
+@media (max-width: 1640px) {
+  .general {
+    height: auto;
+    padding-bottom: 100px;
+    background-position-y: -130px;
+  }
+}
+@media (max-width: 768px) {
+  .general {
+    background-position-y: -300px;
+    background-position-x: -600px;
   }
 }
 .general__wrapper {
@@ -170,6 +195,27 @@ button:hover {
     padding-top: 120px;
   }
 }
+@media (max-width: 1640px) {
+  .general__wrapper-title {
+    font-size: 38px;
+    line-height: 45px;
+    width: 780px;
+  }
+}
+@media (max-width: 768px) {
+  .general__wrapper-title {
+    width: 600px;
+    line-height: 38px;
+  }
+}
+@media (max-width: 390px) {
+  .general__wrapper-title {
+    width: 200px;
+    line-height: 30px;
+    font-size: 30px;
+    text-align: center;
+  }
+}
 .general__wrapper-button {
   width: 511px;
   font-family: "Inter";
@@ -185,6 +231,18 @@ button:hover {
     margin-top: 100px;
   }
 }
+@media (max-width: 1640px) {
+  .general__wrapper-button {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 390px) {
+  .general__wrapper-button {
+    width: 200px;
+    font-size: 15px;
+    padding: 10px;
+  }
+}
 .general__wrapper-button:hover {
   transition: ease-in-out 0.1s;
   background-color: #8C5200;
@@ -193,12 +251,22 @@ button:hover {
 .news {
   height: 289px;
 }
+@media (max-width: 390px) {
+  .news {
+    height: auto;
+  }
+}
 .news__title {
   font-weight: 800;
   font-size: 48px;
   line-height: 58px;
   text-align: center;
   margin: 0;
+}
+@media (max-width: 390px) {
+  .news__title {
+    padding-top: 20px;
+  }
 }
 .news__wrapper {
   display: flex;
@@ -208,6 +276,18 @@ button:hover {
 @media (max-width: 1024px) {
   .news__wrapper {
     gap: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .news__wrapper {
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 390px) {
+  .news__wrapper {
+    transform: none;
+    display: grid;
+    padding-top: 50px;
   }
 }
 .news__wrapper .ncard__date {
@@ -245,6 +325,16 @@ button:hover {
   padding-bottom: 109px;
   display: flex;
   gap: 106px;
+}
+@media (max-width: 768px) {
+  .about__wrapper {
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 390px) {
+  .about__wrapper {
+    display: grid;
+  }
 }
 @media (max-width: 1024px) {
   .about__wrapper {
@@ -303,6 +393,11 @@ button:hover {
     height: auto;
     padding-bottom: 40px;
     background-image: none;
+  }
+}
+@media (max-width: 1640px) {
+  .additional__wrapper {
+    transform: scale(0.8);
   }
 }
 .additional__wrapper-title {
@@ -372,6 +467,11 @@ button:hover {
     background-image: none;
   }
 }
+@media (max-width: 1640px) {
+  .service__wrapper {
+    transform: scale(0.8);
+  }
+}
 .service__wrapper-title {
   padding-top: 62px;
   margin: 0;
@@ -437,11 +537,23 @@ button:hover {
     height: auto;
   }
 }
+@media (max-width: 1640px) {
+  .contacts {
+    height: auto;
+  }
+}
 .contacts__wrapper {
   padding-top: 88px;
   padding-bottom: 88px;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 1640px) {
+  .contacts__wrapper {
+    transform: scale(0.7);
+    margin: 0;
+    padding: 0;
+  }
 }
 @media (max-width: 1024px) {
   .contacts__wrapper {
@@ -535,9 +647,28 @@ button:hover {
   font-size: 96px;
   line-height: 116px;
 }
+@media (max-width: 768px) {
+  .partners__wrapper-title {
+    font-size: 70px;
+  }
+}
+@media (max-width: 390px) {
+  .partners__wrapper-title {
+    font-size: 50px;
+    line-height: 55px;
+    padding-bottom: 40px;
+  }
+}
 @media (max-width: 1024px) {
   .partners__wrapper .icn {
     transform: scale(0.5);
+  }
+}
+@media (max-width: 390px) {
+  .partners__wrapper .icn {
+    transform: none;
+    height: auto;
+    width: 100px;
   }
 }
 .partners__wrapper .icn .picons {
@@ -546,6 +677,30 @@ button:hover {
   justify-content: center;
   gap: 100px;
   padding-top: 40px;
+}
+@media (max-width: 390px) {
+  .partners__wrapper .icn .picons {
+    display: grid;
+    align-items: center;
+    padding-left: 220px;
+    gap: 20px;
+    padding-top: 0;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 390px) {
+  .partners__wrapper .icn .picons .two__icon {
+    width: 300px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 390px) {
+  .partners__wrapper .icn .picons .three__icon {
+    width: 300px;
+    display: block;
+    padding-right: 40px;
+  }
 }
 
 .feedback {
@@ -577,8 +732,25 @@ button:hover {
     top: -50px;
   }
 }
+@media (max-width: 768px) {
+  .feedback__wrapper .fcards {
+    transform: scale(0.5);
+  }
+}
+@media (max-width: 390px) {
+  .feedback__wrapper .fcards {
+    display: grid;
+    transform: none;
+    top: 0;
+  }
+}
 .feedback__wrapper .fcards__fcard {
   text-align: center;
+}
+@media (max-width: 390px) {
+  .feedback__wrapper .fcards__fcard {
+    padding-top: 50px;
+  }
 }
 .feedback__wrapper .fcards__fcard-name {
   font-weight: 800;
@@ -598,6 +770,14 @@ button:hover {
   font-size: 30px;
   line-height: 36px;
 }
+@media (max-width: 390px) {
+  .feedback__wrapper .fcards__fcard-comment {
+    font-size: 20px;
+    line-height: 22px;
+    height: auto;
+    width: 300px;
+  }
+}
 
 .blog {
   height: 1080px;
@@ -614,6 +794,11 @@ button:hover {
   .blog__wrapper {
     position: relative;
     top: -200px;
+  }
+}
+@media (max-width: 1640px) {
+  .blog__wrapper {
+    transform: scale(0.8);
   }
 }
 .blog__wrapper-title {
@@ -658,6 +843,12 @@ button:hover {
     line-height: 40px;
   }
 }
+@media (max-width: 1640px) {
+  .blog__wrapper .bcont__info .btext__subtitle {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
 
 /* Блог */
 .footer {
@@ -690,12 +881,23 @@ button:hover {
   font-size: 8px;
   line-height: 6px;
 }
+@media (max-width: 768px) {
+  .footer .fcont__copyright-text {
+    font-size: 5px;
+  }
+}
 .footer .fcont__link {
   text-align: center;
   font-weight: 800;
   font-size: 32px;
   line-height: 39px;
   margin: 0;
+}
+@media (max-width: 768px) {
+  .footer .fcont__link {
+    font-size: 12px;
+    line-height: 13px;
+  }
 }
 .footer .fcont__partners {
   justify-content: right;
@@ -723,6 +925,16 @@ button:hover {
 .schedule {
   padding-bottom: 150px;
 }
+@media (max-width: 768px) {
+  .schedule__wrapper {
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 390px) {
+  .schedule__wrapper {
+    transform: none;
+  }
+}
 .schedule__wrapper-title {
   font-weight: 800;
   font-size: 64px;
@@ -730,10 +942,20 @@ button:hover {
   text-align: center;
   margin: 0;
 }
+@media (max-width: 390px) {
+  .schedule__wrapper-title {
+    font-size: 32px;
+  }
+}
 .schedule__wrapper .table {
   display: grid;
   justify-content: center;
   gap: 20px;
+}
+@media (max-width: 390px) {
+  .schedule__wrapper .table {
+    gap: 10px;
+  }
 }
 .schedule__wrapper .table__first {
   display: flex;
@@ -744,6 +966,13 @@ button:hover {
     gap: 100px;
   }
 }
+@media (max-width: 390px) {
+  .schedule__wrapper .table__first {
+    gap: 15px;
+    font-size: 10px;
+    padding-right: 100px;
+  }
+}
 .schedule__wrapper .table__second {
   display: flex;
   gap: 170px;
@@ -751,6 +980,13 @@ button:hover {
 @media (max-width: 1024px) {
   .schedule__wrapper .table__second {
     gap: 80px;
+  }
+}
+@media (max-width: 390px) {
+  .schedule__wrapper .table__second {
+    gap: 10px;
+    font-size: 8px;
+    justify-content: center;
   }
 }
 .schedule__wrapper .table__second-button {
@@ -766,6 +1002,13 @@ button:hover {
 .schedule__wrapper .table__second-button:hover {
   transition: ease-in-out 0.1s;
   background-color: #bc6e00;
+}
+@media (max-width: 390px) {
+  .schedule__wrapper .table__second-button {
+    width: 100px;
+    font-size: 8px;
+    padding: 5px;
+  }
 }
 
 /* Расписание Рейсов */
