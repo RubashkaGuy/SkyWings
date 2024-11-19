@@ -4,7 +4,10 @@
     justify-content: center; 
     @include krpc {
         height: 768px;
-        transform: scale(0.55);
+        transform: scale(0.7);
+    }
+    @include lg {
+        height: auto;
     }
     &__wrapper  {
         @include krpc {
@@ -20,6 +23,9 @@
             line-height: 116px;
             text-align: center;
             margin: 0;
+           @include lg {
+
+           }
         }
         .bcont {
             padding-top: 100px;
@@ -36,12 +42,17 @@
             }
             &__info {
                 display: flex;
+                @include lg {
+                    display: none;
+                }
                 gap: 45px;
                 .btext {
                     &__title {
                         font-weight: 700;
                         font-size: 64px;
                         line-height: 77px;
+                        
+                        width: 700px;
                     }
                     &__subtitle {
                         font-weight: 400;
@@ -71,3 +82,59 @@
 
 /* Блог */
 
+
+
+
+.mcont {
+    
+    padding-top: 100px;
+    @include krpc {
+        padding-bottom: 10px;
+    }
+    display: flex;
+    @include lg {
+        display: grid;
+    }
+    @include kr2 {
+        
+    }
+    display: none;
+    align-items: center;
+    text-align: center;
+    &__info {
+        &-title {
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 77px;
+            text-align: center;
+            width: 700px;
+            @include kr2 {
+                font-size: 32px;
+                align-items: center;
+                padding-left: 110px;
+                
+            }
+
+        }
+        &-subtitle {
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 48px;
+            width: 826px;
+            @include kr2 {
+                font-size: 29px;
+                text-align: center;
+                transform: scale(0.7);
+                line-height: 27px;
+            }
+        }
+
+    }
+    &__image {
+        
+        &-picture {
+
+        }
+
+    }
+}

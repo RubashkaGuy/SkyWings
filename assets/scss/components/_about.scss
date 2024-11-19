@@ -6,14 +6,19 @@
     }
     display: flex;
     justify-content: center;
-
+    
     &__wrapper {
+        
         @include lg {
             transform: scale(0.8);
         }
         @include sm {
             display: grid;
             
+        }
+        @include kr2 {
+            display: grid;
+            text-align: center;
         }
         padding-left: 96px;
         padding-right: 96px;
@@ -30,6 +35,19 @@
                 width: 400px;
                 height: 500px;
             }
+            @include kr2 {
+                display: none;
+            }
+
+        }
+        &-mimage {
+            display: none;
+            @include kr2 {
+                display: block;
+                width: 400px;
+                height: 400px;
+                padding-left: 90px;
+            }
         }
         .atext {
 
@@ -44,12 +62,20 @@
                 @include krpc {
                     font-size: 64px;
                 }
+
             }
             &-subtitle {
+                
                 @include krpc {
                     font-size:20px;
                     line-height: 20px;
                     width: 500px;
+                }
+                @include kr2 {
+                    font-size: 15px;
+                    padding-right: 90px;
+                    justify-content: center;
+                    padding-left: 90px;
                 }
                 font-weight: 400;
                 font-size: 33px;

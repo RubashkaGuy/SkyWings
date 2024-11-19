@@ -16,15 +16,31 @@
     <div class="application__template">
         <header class="application__header header" id="header">
             <div class="header__container">
-                <img src="assets/img/icons/logo.svg" alt="" class="header__container-logo">
-                <nav class="header__container-navig navig">
-                    <a href="#!" class="navig__link">Главная</a> 
-                    <a href="#!" class="navig__link">Новости</a>
-                    <a href="#!" class="navig__link">Расписание</a>
-                    <a href="#!" class="navig__link">О нас</a>
-                    <a href="#!" class="navig__link">Блог</a>
-                    <a href="#!" class="navig__link">Партнеры</a>
-                </nav>
+                <div class="header__container-pc pc">
+                    <img src="assets/img/icons/logo.svg" alt="" class="pc__logo">
+                    <nav class="pc__navig">
+                        <a href="#!" class="pc__navig-link">Главная</a> 
+                        <a href="#!" class="pc__navig-link">Новости</a>
+                        <a href="#!" class="pc__navig-link">Расписание</a>
+                        <a href="#!" class="pc__navig-link">О нас</a>
+                        <a href="#!" class="pc__navig-link">Блог</a>
+                        <a href="#!" class="pc__navig-link">Партнеры</a>
+                    </nav>
+                    <button class="pc__button">
+                        <img src="assets/img/icons/menu.svg" alt="" class="mb__button-icon">
+                    </button>
+                </div>
+                <div class="header__container-mobile mb">
+
+                    <nav class="mb__navig">
+                        <a href="#!" class="mb__navig-link">Главная</a> 
+                        <a href="#!" class="mb__navig-link">Новости</a>
+                        <a href="#!" class="mb__navig-link">Расписание</a>
+                        <a href="#!" class="mb__navig-link">О нас</a>
+                        <a href="#!" class="mb__navig-link">Блог</a>
+                        <a href="#!" class="mb__navig-link">Партнеры</a>
+                    </nav>
+                </div>
             </div>
         </header>
         <main class="application__main main" id="main">
@@ -118,6 +134,7 @@
                                 
                                 <span class="atext-subtitle-selection">SkyWings — ваш надежный партнер в мире авиации, готовый подарить крылья для новых открытий!</span></p>
                         </div>
+                        <img src="/assets/img/cg/image.png" alt="" class="about__wrapper-mimage">
                     </div>
                 </section>
                 <section class="main__content-additional additional">
@@ -175,12 +192,29 @@
                             </p>
                             <div class="info__request">
                                 <p class="info__request-text">Вы также можете оставить нам ваш номер, и мы перезвоним вам в течении 15 минут для консультации.</p>
-                                <button href="#!" class="info__request-button button">Заказать звонок.</button>
+                                <button onclick="document.location='request.html'" class="info__request-button button">Заказать звонок.</button>
                             </div>
                         </div>
                         <div class="contacts__wrapper-cmaps cmaps">
                             <iframe class="cmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d658.3171767083232!2d44.51115082298495!3d48.70034482528533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x410534b4b1f2ac63%3A0xffd12202bc8c8509!2z0J3QsNCx0LXRgNC10LbQvdCw0Y8gNjIt0Jkg0JDRgNC80LjQuCwgMdCRLCDQktC-0LvQs9C-0LPRgNCw0LQsINCS0L7Qu9Cz0L7Qs9GA0LDQtNGB0LrQsNGPINC-0LHQuy4sIDQwMDAwMQ!5e0!3m2!1sru!2sru!4v1731598747345!5m2!1sru!2sru" width="904" height="904" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
+                        </div>
+                        <div class="mcontacts__wrapper">
+                            <div class="mcontacts__wrapper-info minfo">
+                                <h2 class="minfo__title">Контакты</h2>
+                                <p class="minfo__subtitle">
+                                    Номер телефона: +7 499 143-49-14 <br>
+                                    Эл. Почта: shueppshdurka@skywings.ru <br>
+                                    Адрес Аэропорта: Набережная 62-й Армии, 1Б
+                                </p>
+                                <div class="minfo__cmaps">
+                                    <iframe class="minfo__cmaps-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d658.3171767083232!2d44.51115082298495!3d48.70034482528533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x410534b4b1f2ac63%3A0xffd12202bc8c8509!2z0J3QsNCx0LXRgNC10LbQvdCw0Y8gNjIt0Jkg0JDRgNC80LjQuCwgMdCRLCDQktC-0LvQs9C-0LPRgNCw0LQsINCS0L7Qu9Cz0L7Qs9GA0LDQtNGB0LrQsNGPINC-0LHQuy4sIDQwMDAwMQ!5e0!3m2!1sru!2sru!4v1731598747345!5m2!1sru!2sru" width="904" height="904" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                <div class="minfo__request">
+                                    <p class="minfo__request-text">Вы также можете оставить нам ваш номер, и мы перезвоним вам в течении 15 минут для консультации.</p>
+                                    <button onclick="document.location='request.html'" class="minfo__request-button">Заказать звонок.</button>
+                                </div>
+
                     </div>
                 </section>
                 <section class="main__content-partners partners">
@@ -227,7 +261,6 @@
                     <div class="blog__wrapper">
                         <h2 class="blog__wrapper-title">Блог</h2>
                         <div class="blog__wrapper-content bcont">
-                            <img src="/assets/img/icons/arrow-left.svg" alt="" class="bcont__arrow">
                             <div class="bcont__info">
                                 <img src="/assets/img/icons/image 6.png" alt="" class="bcont__info-picture">
                                 <div class="bcont__info-text btext">
@@ -235,7 +268,15 @@
                                     <p class="btext__subtitle">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
                                 </div>
                             </div>
-                            <img src="/assets/img/icons/arrow-right.svg" alt="" class="bcont__arrow">
+                        </div>
+                        <div class="mlog__wrapper-content mcont">
+                            <div class="mcont__info">
+                                <h2 class="mcont__info-title">В Волгограде выпал первый снег</h2>
+                                <p class="mcont__info-subtitle">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+                            </div>
+                            <div class="mcont__image">
+                                <img src="/assets/img/icons/image 6.png" alt="" class="mcont__info-picture">
+                            </div>
                         </div>
                     </div>
                 </section>

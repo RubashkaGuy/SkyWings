@@ -20,16 +20,26 @@
             @include krpc {
                 padding-top: 34px;
             }
+            @include kr2 {
+                font-size: 40px;
+                line-height: 30px;
+            }
         }
         .acards{
             @include krpc {
                 display: grid;
                 gap: 5px;
             }
+            
             display: flex;
             justify-content: center;
             gap: 120px;
+
             &__card {
+                @include kr2 {
+                    transform: scale(0.7);
+                    gap: -40px;
+                }
                 @include krpc {
                     display: grid;
                     

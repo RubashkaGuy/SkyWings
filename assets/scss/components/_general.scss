@@ -1,9 +1,11 @@
 .general {
     background-image: url(/assets/img/bg/image.svg);
     height: 1080px;
+    
     @include krpc {
         height: 600px;
-        background-position: -380px;
+        background-size: 120%;
+
     }
     @include mdpc {
         height: auto;
@@ -14,6 +16,13 @@
         background-position-y: -300px;
         background-position-x: -600px;
     }
+    @include kr2 {
+        background-size: 500%;
+        background-position-x: 930px;
+        background-position-y: 10px;
+    }
+    background-size: 100%;
+
     &__wrapper {
         width: 1080px;
         margin-left: 92px;

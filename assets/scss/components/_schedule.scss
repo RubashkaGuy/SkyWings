@@ -8,6 +8,9 @@
             transform: none;
 
         }
+        @include kr2 {
+            transform: scale(0.95);
+        }
         &-title {
             font-weight: 800;
             font-size: 64px;
@@ -26,6 +29,9 @@
             @include sm {
                 gap: 10px;
 
+            }
+            @include kr2 {
+                gap: 20px;
             }
             
             &__first {

@@ -1,0 +1,82 @@
+.call {
+    height: 900px;
+    &__wrapper {
+        align-items: center;
+
+        
+        .form {
+            padding-top: 15%;
+            display: grid;
+            justify-content: center;
+
+            &__title {
+                font-size: 48px;
+                text-align: center;
+            }
+            &__input {
+                display: grid;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+                
+                .fname {
+                    text-align: center;
+                    justify-content: center;
+                    display: grid;
+                    gap: 10px;
+                    
+                    &__name {
+                        
+                        height: 50px;
+                        border-radius: 15px;
+                        outline: none;
+                    }
+                    &__lname {
+                        
+                        height: 50px;
+                        border-radius: 15px;
+                        outline: none;
+                    }
+                    &__number {
+    
+                        height: 50px;
+                        border-radius: 15px;
+                        outline: none;
+                    }
+                    &__button {
+
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 800;
+                        font-size: 17px;
+                        line-height: 39px;
+                        color: white;
+                    }
+                    .bnum {
+                        &__button {
+                            
+                        }
+                    }
+
+
+                }
+                .fphone {
+                    &__number {
+                        align-items: center;
+                    }
+                }
+
+            }
+            &__button {
+
+            }
+        }
+        
+    }
+}
+
+
+
+/*
+
+*/

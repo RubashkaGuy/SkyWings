@@ -1,42 +1,116 @@
 .header {
+    align-items: start;
     background-color: var(--color-secondary);
+
     &__container {
         display: flex;
-        &-logo {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            margin-left: 22px;
-            &:hover {
-                cursor: pointer;
-            }
+        height: 100%;
+        width: 100%;
+        @include kr2 {
+            display: grid;
+            
         }
-        .navig {
-            display: flex;
-            gap: 24px;
-            font-size: 24px;
-            align-items: center;
-            font-style: normal;
-            font-weight: 800;
-            font-size: 36px;
-            line-height: 44px;
-            margin-left: 556px;
+        .pc {
+            @include kr2 {
+                display: flex;
+            }
             @include krpc {
-                margin-left: 150px;
-                font-size: 20px;
+                width: 1024px;
             }
-            @include mdpc {
-                margin-left: 720px;
-                font-size: 20px;
-            }
-            @include lg {
-                margin-left: 60px;
-                font-size: 13px;
-            }
-            &__link {
+            display: flex;
+            &__logo {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                margin-left: 22px;
+                width: 226px;
+                height: 68px;
                 &:hover {
-                    color: rgb(194, 194, 194);
-                    transition: ease-in-out 0.1s;
+                    cursor: pointer;
                 }
+            }
+
+            @include kr2 {
+                gap: 20px;
+                display: grid;
+            }
+
+            &__navig {
+                display: flex;
+                gap: 24px;
+                font-size: 24px;
+                align-items: center;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 36px;
+                line-height: 44px;
+                margin-left: 556px;
+
+                @include mdpc {
+                    margin-left: 720px;
+                    font-size: 20px;
+                }
+
+                @include lg {
+                    margin-left: 60px;
+                    font-size: 13px;
+                }
+
+                @include krpc {
+
+                    font-size: 20px;
+                    margin-left: 130px;
+
+
+                }
+
+                @include kr2 {
+                    display: none;
+                    
+                }
+
+                &-link {
+                    &:hover {
+                        color: rgb(194, 194, 194);
+                        transition: ease-in-out 0.1s;
+                    }
+                }
+            }
+
+            &__button {
+                display: none;
+                @include kr2 {
+                    display: flex;
+                    justify-content: center;
+                    width: 350px;
+
+
+                }
+                
+            }
+
+        }
+
+        .mb {
+            
+
+            display: none;
+
+            @include kr2 {
+                display: grid;
+            }
+            &__navig {
+                @include kr2 {
+                    display: grid;
+                    justify-content: center;
+                    width: 350px;
+                    gap: 10px;
+                    text-align: center;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+            }
+            &__icon {
+
             }
         }
     }
@@ -44,5 +118,3 @@
 
 
 /* Новости */
-
-

@@ -11,6 +11,9 @@
             font-size: 96px;
             line-height: 116px;
             margin: 0;
+            @include kr2 {
+                font-size: 64px;
+            }
 
         }
         

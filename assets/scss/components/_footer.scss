@@ -1,6 +1,6 @@
 .footer {
     background-color: var(--color-secondary);
-
+    align-items: end;
     .fcont {
         display: flex;
         justify-content: center;
@@ -30,16 +30,23 @@
 
         }
         &__link {
+            padding-top: 10px;
             text-align: center;
             font-weight: 800;
             font-size: 32px;
             line-height: 39px;
             margin: 0;
-            @include lg {
-                font-size: 12px;
-                line-height: 13px;
-            }
 
+            @include krpc {
+                font-size: 24px;
+                
+            }
+            @include lg {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 16px;
+                padding-top: 5px;
+            }
         }
         &__partners {
             @include krpc {
