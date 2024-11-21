@@ -33,6 +33,10 @@
                 gap: 20px;
                 display: grid;
             }
+            @include lg {
+                padding-right: 500px;
+                
+            }
 
             &__navig {
                 display: flex;
@@ -50,10 +54,6 @@
                     font-size: 20px;
                 }
 
-                @include lg {
-                    margin-left: 60px;
-                    font-size: 13px;
-                }
 
                 @include krpc {
 
@@ -73,6 +73,14 @@
                         color: rgb(194, 194, 194);
                         transition: ease-in-out 0.1s;
                     }
+                }
+                
+                @include lg {
+                    
+                    margin-left: 100px;
+                    line-height: 20px;
+                    
+                    font-size: 13px;
                 }
             }
 
@@ -95,9 +103,6 @@
 
             display: none;
 
-            @include kr2 {
-                display: grid;
-            }
             &__navig {
                 @include kr2 {
                     display: grid;

@@ -14,38 +14,43 @@
 </head>
 <body class="application">
     <div class="application__template">
+        <div class="scrollup">
+            <a href="#header" class="scrollup__button">
+                <img src="assets/img/icons/arrow up.svg" alt="" class="scrollup__button-icon">
+            </a>
+        </div>
         <header class="application__header header" id="header">
             <div class="header__container">
                 <div class="header__container-pc pc">
                     <img src="assets/img/icons/logo.svg" alt="" class="pc__logo">
                     <nav class="pc__navig">
-                        <a href="#!" class="pc__navig-link">Главная</a> 
-                        <a href="#!" class="pc__navig-link">Новости</a>
-                        <a href="#!" class="pc__navig-link">Расписание</a>
-                        <a href="#!" class="pc__navig-link">О нас</a>
-                        <a href="#!" class="pc__navig-link">Блог</a>
-                        <a href="#!" class="pc__navig-link">Партнеры</a>
+                        <a href="#general" class="pc__navig-link">Главная</a> 
+                        <a href="#news" class="pc__navig-link">Новости</a>
+                        <a href="#schedule" class="pc__navig-link">Расписание</a>
+                        <a href="#about" class="pc__navig-link">О нас</a>
+                        <a href="#blog" class="pc__navig-link">Блог</a>
+                        <a href="#partners" class="pc__navig-link">Партнеры</a>
                     </nav>
-                    <button class="pc__button">
+                    <button class="pc__button" id="pc__button">
                         <img src="assets/img/icons/menu.svg" alt="" class="mb__button-icon">
                     </button>
                 </div>
-                <div class="header__container-mobile mb">
+                <div class="header__container-mobile mb" id="mb">
 
                     <nav class="mb__navig">
-                        <a href="#!" class="mb__navig-link">Главная</a> 
-                        <a href="#!" class="mb__navig-link">Новости</a>
-                        <a href="#!" class="mb__navig-link">Расписание</a>
-                        <a href="#!" class="mb__navig-link">О нас</a>
-                        <a href="#!" class="mb__navig-link">Блог</a>
-                        <a href="#!" class="mb__navig-link">Партнеры</a>
+                        <a href="#general" class="mb__navig-link">Главная</a> 
+                        <a href="#news" class="mb__navig-link">Новости</a>
+                        <a href="#schedule" class="mb__navig-link">Расписание</a>
+                        <a href="#about" class="mb__navig-link">О нас</a>
+                        <a href="#blog" class="mb__navig-link">Блог</a>
+                        <a href="#partners" class="mb__navig-link">Партнеры</a>
                     </nav>
                 </div>
             </div>
         </header>
         <main class="application__main main" id="main">
             <div class="main__content" id="main-content">
-                <section class="main__content-general general">
+                <section class="main__content-general general" id="general">
                     <div class="general__wrapper">
                         <h1 class="general__wrapper-title">Здравствуйте, Гость. <br><br>
                             Окунитесь в небо с уверенностью и комфортом вместе со SkyWings</h1>
@@ -54,7 +59,7 @@
 
                     <!-- Бг через BG-IMAGE (CSS) -->
                 </section>
-                <section class="main__content-news news">
+                <section class="main__content-news news" id="news">
                     <h2 class="news__title">Новости</h2>
                     <div class="news__wrapper">
                         <div class="news__wrapper-ncard ncard">
@@ -75,7 +80,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="main__content-schedule schedule">
+                <section class="main__content-schedule schedule" id="schedule">
                     <div class="schedule__wrapper">
                         <h2 class="schedule__wrapper-title">Расисание рейсов</h2>
                         <div class="schedule__wrapper-table table">
@@ -123,7 +128,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="main__content-about about">
+                <section class="main__content-about about" id="about">
                     <div class="about__wrapper">
                         <img src="/assets/img/cg/image.png" alt="" class="about__wrapper-image">
                         <div class="about__wrapper-atext atext">
@@ -217,7 +222,7 @@
 
                     </div>
                 </section>
-                <section class="main__content-partners partners">
+                <section class="main__content-partners partners" id="partners">
                     <div class="partners__wrapper">
                         <h2 class="partners__wrapper-title">Наши партнёры</h2>
                         <div class="partners__wrapper-icn icn">
@@ -257,7 +262,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="main__content-blog blog">
+                <section class="main__content-blog blog" id="blog">
                     <div class="blog__wrapper">
                         <h2 class="blog__wrapper-title">Блог</h2>
                         <div class="blog__wrapper-content bcont">

@@ -1,4 +1,4 @@
-.footer {
+/*.footer {
     background-color: var(--color-secondary);
     align-items: end;
     .fcont {
@@ -71,4 +71,107 @@
     line-height: 39px;
     margin: 0;
     justify-content: c;
+}
+*/
+
+
+.footer {
+    background-color: var(--color-secondary);
+    align-items: end;
+
+    .fcont {
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Центровка элементов по вертикали */
+        gap: 200px; /* Уменьшение основного разрыва */
+        
+        @include krpc {
+            gap: 80px;
+        }
+
+        @media (max-width: 350px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &__copyright {
+            &-logo {
+                width: 80px;
+                height: auto; /* Автоматическая высота для пропорций */
+                @include krpc {
+                    width: 60px;
+                }
+
+                @media (max-width: 350px) {
+                    width: 50px;
+                }
+            }
+
+            &-text {
+                margin: 0;
+                font-weight: 500;
+                font-size: 8px;
+                line-height: 8px;
+
+                @include lg {
+                    font-size: 6px;
+                }
+
+                @media (max-width: 350px) {
+                    font-size: 5px;
+                    line-height: 6px;
+                    text-align: center;
+                }
+            }
+        }
+
+        &__link {
+            padding: 5px 0; /* Уменьшение вертикальных отступов */
+            text-align: center;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 24px;
+            margin: 0;
+
+            @include krpc {
+                font-size: 16px;
+            }
+
+            @include lg {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 16px;
+            }
+
+            @media (max-width: 350px) {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+
+        &__partners {
+            display: flex;
+            gap: 12px; /* Уменьшение разрыва между логотипами */
+            justify-content: right;
+
+            @include krpc {
+                padding-right: 10px;
+            }
+
+            @media (max-width: 350px) {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px;
+                padding-right: 0;
+            }
+
+            &-logo {
+                width: 35px; /* Уменьшение размера логотипов */
+                @media (max-width: 350px) {
+                    width: 30px;
+                }
+            }
+        }
+    }
 }

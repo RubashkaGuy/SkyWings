@@ -1,3 +1,4 @@
+
 .general {
     background-image: url(/assets/img/bg/image.svg);
     height: 1080px;
@@ -15,6 +16,7 @@
     @include lg {
         background-position-y: -300px;
         background-position-x: -600px;
+        background-size: 200%;
     }
     @include kr2 {
         background-size: 500%;
@@ -85,3 +87,6 @@
         }
     }
 }
+
+
+
