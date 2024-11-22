@@ -205,7 +205,8 @@
             transition: background-color 0.3s ease;
             @include kr2 {
                 font-size: 5px;
-                padding: 5px;
+                padding: 2px;
+                
                 
             }
             &:hover {

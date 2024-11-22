@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Показать кнопку, когда прокрутили вниз на 300px
     window.addEventListener("scroll", () => {
-        if (window.scrollY > 10) {
+        if (window.scrollY > 100) {
             scrollUp.style.display = "block";
         } else {
             scrollUp.style.display = "none";

@@ -9,8 +9,9 @@
         right: 420px
     }
     @include kr2 {
-        bottom: 30px;
-        padding-right: 830px;
+        bottom: 70px;
+        right: 820px;
+
     }
     display: none; // Кнопка скрыта по умолчанию
     z-index: 1000;

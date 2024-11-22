@@ -526,12 +526,22 @@ button:hover {
     background-image: none;
   }
 }
+@media (max-width: 350px) {
+  .additional {
+    padding: 0;
+  }
+}
 .additional__wrapper {
   width: 100%;
 }
 @media (max-width: 1640px) {
   .additional__wrapper {
     transform: scale(0.8);
+  }
+}
+@media (max-width: 350px) {
+  .additional__wrapper {
+    transform: none;
   }
 }
 .additional__wrapper-title {
@@ -549,7 +559,7 @@ button:hover {
 }
 @media (max-width: 350px) {
   .additional__wrapper-title {
-    font-size: 40px;
+    font-size: 35px;
     line-height: 30px;
   }
 }
@@ -642,6 +652,7 @@ button:hover {
 @media (max-width: 350px) {
   .service__wrapper {
     transform: none;
+    padding-top: 50px;
   }
 }
 .service__wrapper-title {
@@ -894,7 +905,7 @@ button:hover {
 }
 @media (max-width: 350px) {
   .mcontacts__wrapper .minfo__subtitle {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 22px;
     height: auto;
     text-align: center;
@@ -1786,7 +1797,7 @@ button:hover {
 @media (max-width: 350px) {
   .schedule .sdtbl .stbody__title-item--button {
     font-size: 5px;
-    padding: 5px;
+    padding: 2px;
   }
 }
 .schedule .sdtbl .stbody__title-item--button:hover {
@@ -1868,8 +1879,8 @@ button:hover {
 }
 @media (max-width: 350px) {
   .scrollup {
-    bottom: 30px;
-    padding-right: 830px;
+    bottom: 70px;
+    right: 820px;
   }
 }
 .scrollup__button {

@@ -6,10 +6,17 @@
         padding-bottom: 40px;
         background-image:none;
     }
+    @include kr2 {
+        padding: 0;
+
+    }
     &__wrapper {
         width: 100%;
         @include mdpc {
             transform: scale(0.8);
+        }
+        @include kr2 {
+            transform: none;
         }
         &-title {
             padding-top: 62px;
@@ -22,7 +29,7 @@
                 padding-top: 34px;
             }
             @include kr2 {
-                font-size: 40px;
+                font-size: 35px;
                 line-height: 30px;
             }
         }
