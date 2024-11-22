@@ -16,15 +16,31 @@
     <div class="application__template">
         <header class="application__header header" id="header">
             <div class="header__container">
-                <img src="assets/img/icons/logo.svg" alt="" class="header__container-logo">
-                <nav class="header__container-navig navig">
-                    <a href="#!" class="navig__link">Главная</a> 
-                    <a href="#!" class="navig__link">Новости</a>
-                    <a href="#!" class="navig__link">Расписание</a>
-                    <a href="#!" class="navig__link">О нас</a>
-                    <a href="#!" class="navig__link">Блог</a>
-                    <a href="#!" class="navig__link">Партнеры</a>
-                </nav>
+                <div class="header__container-pc pc">
+                    <img src="assets/img/icons/logo.svg" alt="" class="pc__logo">
+                    <nav class="pc__navig">
+                        <a href="#general" class="pc__navig-link">Главная</a> 
+                        <a href="#news" class="pc__navig-link">Новости</a>
+                        <a href="#schedule" class="pc__navig-link">Расписание</a>
+                        <a href="#about" class="pc__navig-link">О нас</a>
+                        <a href="#blog" class="pc__navig-link">Блог</a>
+                        <a href="#partners" class="pc__navig-link">Партнеры</a>
+                    </nav>
+                    <a class="pc__button" id="pc__button">
+                        <img src="assets/img/icons/menu.svg" alt="" class="mb__button-icon">
+                    </a>
+                </div>
+                <div class="header__container-mobile mb" id="mb">
+
+                    <nav class="mb__navig">
+                        <a href="#general" class="mb__navig-link">Главная</a> 
+                        <a href="#news" class="mb__navig-link">Новости</a>
+                        <a href="#schedule" class="mb__navig-link">Расписание</a>
+                        <a href="#about" class="mb__navig-link">О нас</a>
+                        <a href="#blog" class="mb__navig-link">Блог</a>
+                        <a href="#partners" class="mb__navig-link">Партнеры</a>
+                    </nav>
+                </div>
             </div>
         </header>
         <main class="application__main main" id="main">

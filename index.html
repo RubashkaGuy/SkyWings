@@ -31,9 +31,9 @@
                         <a href="#blog" class="pc__navig-link">Блог</a>
                         <a href="#partners" class="pc__navig-link">Партнеры</a>
                     </nav>
-                    <button class="pc__button" id="pc__button">
+                    <a class="pc__button" id="pc__button">
                         <img src="assets/img/icons/menu.svg" alt="" class="mb__button-icon">
-                    </button>
+                    </a>
                 </div>
                 <div class="header__container-mobile mb" id="mb">
 
@@ -80,7 +80,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="main__content-schedule schedule" id="schedule">
+                <!-- <section class="main__content-schedule schedule" id="schedule">
                     <div class="schedule__wrapper">
                         <h2 class="schedule__wrapper-title">Расисание рейсов</h2>
                         <div class="schedule__wrapper-table table">
@@ -128,6 +128,46 @@
                         </div>
                     </div>
                 </section>
+            -->
+            <section class="main__content-schedule schedule" id="schedule">
+                <div class="schedule__wrapper">
+                    <h2 class="schedule__wrapper-title">Расписание рейсов</h2>
+                    <table class="schedule__wrapper-table sdtbl">
+                        <thead class="sdtbl__head sthead">
+                            <tr class="sthead__title">
+                                <th class="sthead__title-item">Рейс</th>
+                                <th class="sthead__title-item">Время</th>
+                                <th class="sthead__title-item">Посадка</th>
+                                <th class="sthead__title-item">Взлёт</th>
+                                <th class="sthead__title-item"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="sdtbl__body stbody">
+                            <tr class="stbody__title">
+                                <td class="stbody__title-item">№888133</td>
+                                <td class="stbody__title-item">8:30</td>
+                                <td class="stbody__title-item">г. Волгоград</td>
+                                <td class="stbody__title-item">г. Санкт-Петербург</td>
+                                <td class="stbody__title-item"><button onclick="window.location.href='request.html'" class="stbody__title-item--button">Забронировать билет</button></td>
+                            </tr>
+                            <tr class="stbody__title">
+                                <td class="stbody__title-item">№888134</td>
+                                <td class="stbody__title-item">10:15</td>
+                                <td class="stbody__title-item">г. Москва</td>
+                                <td class="stbody__title-item">г. Екатеринбург</td>
+                                <td class="stbody__title-item"><button onclick="window.location.href='request.html'" class="stbody__title-item--button">Забронировать билет</button></td>
+                            </tr class="stbody__title">
+                            <tr class="stbody__title">
+                                <td class="stbody__title-item">№888135</td>
+                                <td class="stbody__title-item">12:45</td>
+                                <td class="stbody__title-item">г. Казань</td>
+                                <td class="stbody__title-item">г. Новосибирск</td>
+                                <td class="stbody__title-item"><button onclick="window.location.href='request.html'" class="stbody__title-item--button">Забронировать билет</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>            
                 <section class="main__content-about about" id="about">
                     <div class="about__wrapper">
                         <img src="/assets/img/cg/image.png" alt="" class="about__wrapper-image">

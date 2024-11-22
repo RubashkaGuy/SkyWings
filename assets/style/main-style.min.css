@@ -104,6 +104,7 @@ button:hover {
 .header {
   align-items: start;
   background-color: var(--color-secondary);
+  width: 100%;
 }
 .header__container {
   display: flex;
@@ -117,11 +118,6 @@ button:hover {
 }
 .header__container .pc {
   display: flex;
-}
-@media (max-width: 350px) {
-  .header__container .pc {
-    display: flex;
-  }
 }
 @media (max-width: 1024px) {
   .header__container .pc {
@@ -137,12 +133,6 @@ button:hover {
 }
 .header__container .pc__logo:hover {
   cursor: pointer;
-}
-@media (max-width: 350px) {
-  .header__container .pc {
-    gap: 20px;
-    display: grid;
-  }
 }
 @media (max-width: 768px) {
   .header__container .pc {
@@ -194,8 +184,13 @@ button:hover {
 @media (max-width: 350px) {
   .header__container .pc__button {
     display: flex;
-    justify-content: center;
-    width: 350px;
+    width: 30px;
+    height: 30px;
+    padding-top: 20px;
+    box-sizing: content-box;
+  }
+  .header__container .pc__button:hover {
+    cursor: pointer;
   }
 }
 .header__container .mb {
@@ -215,7 +210,9 @@ button:hover {
 /* Новости */
 .general {
   background-image: url(/assets/img/bg/image.svg);
-  height: 1080px;
+  padding-bottom: 200px;
+  width: 100%;
+  justify-content: space-between;
   background-size: 100%;
 }
 @media (max-width: 1024px) {
@@ -246,8 +243,17 @@ button:hover {
   }
 }
 .general__wrapper {
-  width: 1080px;
+  width: 100%;
   margin-left: 92px;
+}
+@media (max-width: 350px) {
+  .general__wrapper {
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .general__wrapper-title {
   padding-top: 235px;
@@ -288,6 +294,11 @@ button:hover {
     text-align: center;
   }
 }
+@media (max-width: 350px) {
+  .general__wrapper-title {
+    width: 100%;
+  }
+}
 .general__wrapper-button {
   width: 511px;
   font-family: "Inter";
@@ -313,6 +324,14 @@ button:hover {
     width: 200px;
     font-size: 15px;
     padding: 10px;
+  }
+}
+@media (max-width: 350px) {
+  .general__wrapper-button {
+    width: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .general__wrapper-button:hover {
@@ -380,7 +399,6 @@ button:hover {
 }
 
 .about {
-  background-image: url(/assets/img/bg/image\ 1.svg);
   height: 1080px;
   display: flex;
   justify-content: center;
@@ -410,8 +428,19 @@ button:hover {
 }
 @media (max-width: 350px) {
   .about__wrapper {
-    display: grid;
     text-align: center;
+  }
+}
+@media (max-width: 350px) {
+  .about__wrapper {
+    transform: none;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (max-width: 1024px) {
@@ -428,6 +457,7 @@ button:hover {
 @media (max-width: 350px) {
   .about__wrapper-image {
     display: none;
+    height: auto;
   }
 }
 .about__wrapper-mimage {
@@ -436,9 +466,8 @@ button:hover {
 @media (max-width: 350px) {
   .about__wrapper-mimage {
     display: block;
-    width: 400px;
-    height: 400px;
-    padding-left: 90px;
+    width: 50%;
+    height: auto;
   }
 }
 .about__wrapper .atext-title {
@@ -497,6 +526,9 @@ button:hover {
     background-image: none;
   }
 }
+.additional__wrapper {
+  width: 100%;
+}
 @media (max-width: 1640px) {
   .additional__wrapper {
     transform: scale(0.8);
@@ -532,18 +564,25 @@ button:hover {
     gap: 5px;
   }
 }
+@media (max-width: 350px) {
+  .additional__wrapper .acards {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .additional__wrapper .acards__card {
   padding-top: 75px;
-}
-@media (max-width: 350px) {
-  .additional__wrapper .acards__card {
-    transform: scale(0.7);
-    gap: -40px;
-  }
 }
 @media (max-width: 1024px) {
   .additional__wrapper .acards__card {
     display: grid;
+  }
+}
+@media (max-width: 350px) {
+  .additional__wrapper .acards__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .additional__wrapper .acards__card-title {
@@ -554,8 +593,14 @@ button:hover {
   line-height: 48px;
   padding-bottom: 4px;
 }
+@media (max-width: 350px) {
+  .additional__wrapper .acards__card-title {
+    padding-bottom: 20px;
+  }
+}
 .additional__wrapper .acards__card-image {
   border-radius: 86px;
+  width: 80%;
 }
 .additional__wrapper .acards__card-subtitle {
   font-weight: 400;
@@ -568,6 +613,11 @@ button:hover {
   .additional__wrapper .acards__card-subtitle {
     margin: 0;
     padding: 0;
+  }
+}
+@media (max-width: 350px) {
+  .additional__wrapper .acards__card-subtitle {
+    width: 80%;
   }
 }
 
@@ -1296,107 +1346,218 @@ button:hover {
   }
 }
 
+/*.schedule {
+    display: none;
+    padding-bottom: 150px;
+    &__wrapper {
+        @include lg {
+            transform: scale(0.8);
+        }
+        @include sm {
+            transform: none;
+
+        }
+        @include kr2 {
+            transform: scale(0.95);
+        }
+        &-title {
+            font-weight: 800;
+            font-size: 64px;
+            line-height: 77px;
+            text-align: center;
+            margin: 0;
+            @include sm {
+                font-size: 32px;
+            }
+        }
+
+        .table {
+            display: grid;
+            justify-content: center;
+            gap: 20px;
+            @include sm {
+                gap: 10px;
+
+            }
+            @include kr2 {
+                gap: 20px;
+            }
+
+            &__first {
+                display: flex;
+                gap: 190px;
+                @include krpc {
+                    gap: 100px;
+                }
+                @include sm {
+                    gap: 15px;
+                    font-size: 10px;
+                    padding-right: 100px;
+
+
+                }
+            }
+
+            &__second {
+                display: flex;
+                gap: 170px;
+                @include krpc {
+                    gap: 80px;
+                }
+                @include sm {
+                    gap: 10px;
+                    font-size: 8px;
+                    justify-content: center;
+
+                }
+                &-button {
+                    font-weight: 800;
+                    font-size: 12px;
+                    line-height: 15px;
+                    width: 175px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    color: white;
+                    font-size: 12px;
+
+                    &:hover {
+                        transition: ease-in-out 0.1s;
+                        background-color: #bc6e00;
+                    }
+
+                    @include sm {
+                        width: 100px;
+                        font-size: 8px;
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+*/
+/* Расписание Рейсов */
+/* Забронировать билет */
+/*
 .schedule {
+    width: 100%;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        &-title {
+            font-weight: 800;
+            font-size: 64px;
+            line-height: 77px;
+            text-align: center;
+            margin: 0;
+        }
+        .sdtbl {
+            gap: 20px;
+            padding-top: 150px;
+            padding-bottom: 150px;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            table-layout: fixed;
+            .sthead {
+                &__title {
+                    font-size: 50px;
+
+                    &-item {
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+*/
+.schedule__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
   padding-bottom: 150px;
-}
-@media (max-width: 768px) {
-  .schedule__wrapper {
-    transform: scale(0.8);
-  }
-}
-@media (max-width: 390px) {
-  .schedule__wrapper {
-    transform: none;
-  }
 }
 @media (max-width: 350px) {
   .schedule__wrapper {
-    transform: scale(0.95);
+    padding: 0;
   }
 }
 .schedule__wrapper-title {
-  font-weight: 800;
-  font-size: 64px;
-  line-height: 77px;
-  text-align: center;
-  margin: 0;
+  font-size: 48px;
+  padding-bottom: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
-@media (max-width: 390px) {
-  .schedule__wrapper-title {
-    font-size: 32px;
-  }
-}
-.schedule__wrapper .table {
-  display: grid;
-  justify-content: center;
-  gap: 20px;
-}
-@media (max-width: 390px) {
-  .schedule__wrapper .table {
-    gap: 10px;
-  }
+.schedule .sdtbl {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-size: 23px;
+  font-weight: 700;
 }
 @media (max-width: 350px) {
-  .schedule__wrapper .table {
-    gap: 20px;
+  .schedule .sdtbl {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 50px;
   }
 }
-.schedule__wrapper .table__first {
-  display: flex;
-  gap: 190px;
+.schedule .sdtbl th,
+.schedule .sdtbl td {
+  padding: 12px;
+  text-align: center;
 }
-@media (max-width: 1024px) {
-  .schedule__wrapper .table__first {
-    gap: 100px;
+@media (max-width: 350px) {
+  .schedule .sdtbl th,
+  .schedule .sdtbl td {
+    padding: 6px;
   }
 }
-@media (max-width: 390px) {
-  .schedule__wrapper .table__first {
-    gap: 15px;
-    font-size: 10px;
-    padding-right: 100px;
+.schedule .sdtbl th {
+  background-color: var(--color-secondary);
+  font-weight: bold;
+}
+@media (max-width: 350px) {
+  .schedule .sdtbl th {
+    font-weight: 400;
   }
 }
-.schedule__wrapper .table__second {
-  display: flex;
-  gap: 170px;
+.schedule .sdtbl tr:nth-child(even) {
+  background-color: var(--color-secondary);
 }
-@media (max-width: 1024px) {
-  .schedule__wrapper .table__second {
-    gap: 80px;
-  }
+.schedule .sdtbl tr:hover {
+  background-color: #020497;
 }
-@media (max-width: 390px) {
-  .schedule__wrapper .table__second {
-    gap: 10px;
-    font-size: 8px;
-    justify-content: center;
-  }
-}
-.schedule__wrapper .table__second-button {
-  font-weight: 800;
-  font-size: 12px;
-  line-height: 15px;
-  width: 175px;
-  font-family: "Inter";
-  font-style: normal;
+.schedule .sdtbl .stbody__title-item--button {
+  background-color: var(--color-accent);
   color: white;
-  font-size: 12px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
-.schedule__wrapper .table__second-button:hover {
-  transition: ease-in-out 0.1s;
-  background-color: #bc6e00;
-}
-@media (max-width: 390px) {
-  .schedule__wrapper .table__second-button {
-    width: 100px;
-    font-size: 8px;
+@media (max-width: 350px) {
+  .schedule .sdtbl .stbody__title-item--button {
+    font-size: 5px;
     padding: 5px;
   }
 }
+.schedule .sdtbl .stbody__title-item--button:hover {
+  background-color: rgb(0, 31, 232);
+}
 
-/* Расписание Рейсов */
-/* Забронировать билет */
 .call {
   height: 900px;
 }
@@ -1522,4 +1683,9 @@ button:hover {
     width: 18px;
     height: 18px;
   }
+}
+
+.application {
+  max-width: 100%;
+  overflow-x: hidden;
 }/*# sourceMappingURL=main-style.min.css.map */

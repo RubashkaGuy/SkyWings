@@ -1,8 +1,10 @@
 
 .general {
     background-image: url(/assets/img/bg/image.svg);
-    height: 1080px;
-    
+    padding-bottom: 200px;
+    width: 100%;
+    justify-content: space-between;
+
     @include krpc {
         height: 600px;
         background-size: 120%;
@@ -26,8 +28,16 @@
     background-size: 100%;
 
     &__wrapper {
-        width: 1080px;
+        width: 100%;
         margin-left: 92px;
+        @include kr2 {
+            margin: 0;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            
+        }
         &-title {
             padding-top: 235px;
             font-family: 'Inter';
@@ -58,6 +68,10 @@
                 font-size: 30px;
                 text-align: center;
             }
+            @include kr2 {
+                width: 100%;
+                
+            }
         }
         &-button {
             width: 511px;
@@ -78,6 +92,13 @@
                 width: 200px;
                 font-size: 15px;
                 padding: 10px;
+            }
+            @include kr2 {
+                width: 80%;
+                margin-top: 50px;
+                margin-left: auto;
+                margin-right: auto;
+
             }
             &:hover {
                 transition: ease-in-out 0.1s;
