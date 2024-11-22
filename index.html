@@ -20,7 +20,7 @@
             </a>
         </div>
         <header class="application__header header" id="header">
-            <div class="header__container">
+            <div class="wrapper header__container">
                 <div class="header__container-pc pc">
                     <img src="assets/img/icons/logo.svg" alt="" class="pc__logo">
                     <nav class="pc__navig">
@@ -51,7 +51,7 @@
         <main class="application__main main" id="main">
             <div class="main__content" id="main-content">
                 <section class="main__content-general general" id="general">
-                    <div class="general__wrapper">
+                    <div class="wrapper general__wrapper">
                         <h1 class="general__wrapper-title">Здравствуйте, Гость. <br><br>
                             Окунитесь в небо с уверенностью и комфортом вместе со SkyWings</h1>
                         <button onclick="document.getElementById('schedule').scrollIntoView({ behavior: 'smooth' });" class="general__wrapper-button button">Перейти к расписанию</button>
@@ -61,7 +61,7 @@
                 </section>
                 <section class="main__content-news news" id="news">
                     <h2 class="news__title">Новости</h2>
-                    <div class="news__wrapper">
+                    <div class="wrapper news__wrapper">
                         <div class="news__wrapper-ncard ncard">
                             <p class="ncard__date">13 нояб. 2024</p>
                             <h3 class="ncard__text">Запущена скидка 20% на все блюда из меню SkyDining</h3>
@@ -130,7 +130,7 @@
                 </section>
             -->
             <section class="main__content-schedule schedule" id="schedule">
-                <div class="schedule__wrapper">
+                <div class="wrapper schedule__wrapper">
                     <h2 class="schedule__wrapper-title">Расписание рейсов</h2>
                     <table class="schedule__wrapper-table sdtbl">
                         <thead class="sdtbl__head sthead">
@@ -169,7 +169,7 @@
                 </div>
             </section>            
                 <section class="main__content-about about" id="about">
-                    <div class="about__wrapper">
+                    <div class="wrapper about__wrapper">
                         <img src="/assets/img/cg/image.png" alt="" class="about__wrapper-image">
                         <div class="about__wrapper-atext atext">
                             <h2 class="atext-title">О нас</h2>
@@ -183,7 +183,7 @@
                     </div>
                 </section>
                 <section class="main__content-additional additional">
-                    <div class="additional__wrapper">
+                    <div class="wrapper additional__wrapper">
                         <h2 class="additional__wrapper-title">Дополнительные услуги</h2>
                         <div class="additional__wrapper-acards acards">
                             <div class="acards__card">
@@ -205,7 +205,7 @@
                     </div>
                 </section>
                 <section class="main__content-service service">
-                    <div class="service__wrapper">
+                    <div class="wrapper service__wrapper">
                         <h2 class="service__wrapper-title">Классы обслуживания</h2>
                         <div class="service__wrapper-scards scards">
                             <div class="scards__card">
@@ -227,7 +227,7 @@
                     </div>
                 </section>
                 <section class="main__content-contacts contacts">
-                    <div class="contacts__wrapper">
+                    <div class="wrapper contacts__wrapper">
                         <div class="contacts__wrapper-info info">
                             <h2 class="info__title">Контакты</h2>
                             <p class="info__subtitle">
@@ -244,7 +244,7 @@
                             <iframe class="cmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d658.3171767083232!2d44.51115082298495!3d48.70034482528533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x410534b4b1f2ac63%3A0xffd12202bc8c8509!2z0J3QsNCx0LXRgNC10LbQvdCw0Y8gNjIt0Jkg0JDRgNC80LjQuCwgMdCRLCDQktC-0LvQs9C-0LPRgNCw0LQsINCS0L7Qu9Cz0L7Qs9GA0LDQtNGB0LrQsNGPINC-0LHQuy4sIDQwMDAwMQ!5e0!3m2!1sru!2sru!4v1731598747345!5m2!1sru!2sru" width="904" height="904" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                         </div>
-                        <div class="mcontacts__wrapper">
+                        <div class="wrapper mcontacts__wrapper">
                             <div class="mcontacts__wrapper-info minfo">
                                 <h2 class="minfo__title">Контакты</h2>
                                 <p class="minfo__subtitle">
@@ -263,7 +263,7 @@
                     </div>
                 </section>
                 <section class="main__content-partners partners" id="partners">
-                    <div class="partners__wrapper">
+                    <div class="wrapper partners__wrapper">
                         <h2 class="partners__wrapper-title">Наши партнёры</h2>
                         <div class="partners__wrapper-icn icn">
                             <div class="icn__icons">
@@ -281,7 +281,7 @@
                     </div>
                 </section>
                 <section class="main__content-feedback feedback">
-                    <div class="feedback__wrapper">
+                    <div class="wrapper feedback__wrapper">
                         <h2 class="feedback__wrapper-text">Отзывы</h2>
                         <div class="feedback__wrapper-cards fcards">
                             <div class="fcards__fcard">
@@ -302,6 +302,7 @@
                         </div>
                     </div>
                 </section>
+                <!-- 
                 <section class="main__content-blog blog" id="blog">
                     <div class="blog__wrapper">
                         <h2 class="blog__wrapper-title">Блог</h2>
@@ -325,10 +326,33 @@
                         </div>
                     </div>
                 </section>
+                -->
+                <section id="blog" class="main__blog blog">
+                    <div class="news__container container">
+                        <p class="news__title">Блог</p>
+                        <div class="news__group">
+                            <div class="news__group-new new">
+                                <p class="new__title">Первый снег в Волгаграде</p>
+                                <img src="/assets/img/icons/image 6.png" alt="" class="new__image">
+                                <p class="new__text">Волгоград оказался самым первым городом в снегу</p>
+                            </div>
+                            <div class="news__group-new new">
+                                <p class="new__title">Очарование Барнаула</p>
+                                <img src="/assets/img/icons/barn.jpg" alt="" class="new__image">
+                                <p class="new__text">Лучшие места Барнаула</p>
+                            </div>
+                            <div class="news__group-new new">
+                                <p class="new__title">Манящий Самарканд</p>
+                                <img src="/assets/img/icons/sk.jpg" alt="" class="new__image">
+                                <p class="new__text">Самарканд – один из самых древних и прекрасных городов мира</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </main>
         <footer class="application__footer footer">
-            <div class="footer__container fcont">
+            <div class="wrapper footer__container fcont">
                 <div class="fcont__copyright">
                     <img src="/assets/img/icons/logo.svg" alt="" class="fcont__copyright-logo">
                     <p class="fcont__copyright-text">©2008-2024 SkyWings Airlines, все права защищены</p>

@@ -96,10 +96,16 @@
         display: grid;
     }
     @include kr2 {
-        transform: scale(0.4);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     justify-content: center;
     .minfo {
+        @include kr2 {
+            align-items: center;
+        }
         &__title {
             text-align: center;
             font-weight: 800;
@@ -108,6 +114,11 @@
             margin: 0;
             @include lg {
                 font-size: 64px;
+            }
+            @include kr2 {
+                font-size: 48px;
+                align-items: center;
+                text-align: center;
             }
         }
         &__subtitle {
@@ -119,6 +130,15 @@
             @include lg {
                 font-size: 32px;
             }
+            @include kr2 {
+                font-size: 15px;
+                line-height: 22px;
+                
+                height: auto;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
         }
         &__cmaps {
             text-align: center;
@@ -127,6 +147,10 @@
                 width: 600px;
                 height: 600px;
                 border-radius: 25px;
+                @include kr2 {
+                    width: 300px;
+                    height: 300px;
+                }
             }
         }
         &__request {
@@ -142,6 +166,10 @@
                 margin: 0;
                 padding-bottom: 25px;
                 text-align: center;
+                @include kr2 {
+                    font-size: 20px;
+                    width: 300px;
+                }
             }
             &-button {
                 font-weight: 500;
