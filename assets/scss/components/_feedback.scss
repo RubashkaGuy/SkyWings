@@ -4,7 +4,12 @@
         height: auto;
     }
     &__wrapper {
-
+        width: 100%;
+        @include kr2 {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
         &-text {
             text-align: center;
             font-weight: 800;
@@ -33,6 +38,14 @@
                 top: 0;
                 
             }
+            @include kr2 {
+                transform: none;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
             padding-top: 70px;
             display: flex;
             gap: 106px;
@@ -40,6 +53,11 @@
             &__fcard {
                 @include sm {
                     padding-top: 50px;
+                }
+                @include kr2 {
+                    align-items: center;
+                    justify-content: center;
+                    
                 }
                 text-align: center;
                 &-name {
@@ -64,6 +82,13 @@
                         line-height: 22px;
                         height: auto;
                         width: 300px;
+                    }
+                    @include kr2 {
+                        height: 100%;
+                        margin: 0;
+                        
+                        align-items: center;
+                        justify-content: center;
                     }
                 }
 
